@@ -17,7 +17,7 @@ def diagonalDifference(matrix):
             pass
         pass
 
-    result = math.fabs(leftDiagonal - rightDiagonal)
+    result = int(math.fabs(leftDiagonal - rightDiagonal))
     print(f'|{leftDiagonal} - {rightDiagonal}| = {result}')
     return result
 
@@ -27,7 +27,7 @@ newMatrix = []
 yArray = []
 for i in range(0, squareQuantity):
     for j in range(0, squareQuantity):
-        yArray.append(float(input(f"Dame un numero para el indice [{i}][{j}]\n?> ")))
+        yArray.append(int(input(f"Dame un numero para el indice [{i}][{j}]\n?> ")))
         pass
     newMatrix.append(yArray)
     yArray = []
